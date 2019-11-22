@@ -83,7 +83,7 @@ module.exports = {
       startup.market = req.body.market;
       startup.target_audience = req.body.target_audience;
       startup.stage = req.body.stage;
-      startup.location = req.body.location;
+      startup.address = req.body.address;
 
       startup.save((err, newStartup) => {
         if (err) return res.status(500).json(err.message);
